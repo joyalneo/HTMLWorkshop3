@@ -2,59 +2,22 @@
 <html>
 
 <head>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script type="text/javascript"
-        src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-    <link rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-        crossorigin="anonymous" />
-    <link rel="stylesheet"
-        type="text/css"
-        href="styles.css"
-        media="screen" />
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#hamburgerButton").click(function () {
-                $("#captionShow").toggle();
-                if($("#hamburgerIcon").attr("src") == './assets/menu.svg'){
-                    $('#hamburgerIcon').attr('src', './assets/menu2.svg');
-                }
-                else {
-                    $('#hamburgerIcon').attr('src', './assets/menu.svg');
-                }
-            });
-        });
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 
-    <script>
-        showBanner = (event) => {
-            let idName = this[event.name];
-            let buttonId = event.id;
-            console.log($(event).children("i"))
-            $(idName).toggle();
-            $(event).children("i").toggleClass('fa-chevron-down fa-chevron-up');
-        }
-    </script>
 
 </head>
 
@@ -63,24 +26,12 @@
         <div id="overlay-container">
             <nav class="navbar sticky-top navbar-expand-lg bg-dark">
                 <div class="container">
-                    <a class="navbar-brand"
-                        href="#"><img src="./assets/logo.png"
-                            alt="logo" /></a>
-                    <button class="navbar-toggler"
-                        id="hamburgerButton"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <img id="hamburgerIcon"
-                            src="./assets/menu.svg" />
-                        <!-- <i class="fas fa-bars"></i> -->
+                    <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="logo" /></a>
+                    <button class="navbar-toggler" id="hamburgerButton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <img id="hamburgerIcon" src="./assets/menu.svg" />
                     </button>
 
-                    <div class="collapse navbar-collapse"
-                        id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="
                                     navbar-nav
                                     mr-auto
@@ -88,51 +39,42 @@
                                     justify-content-end
                                 ">
                             <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#">Home</a>
+                                <a class="nav-link" href="#">Home</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#services">Services</a>
+                                <a class="nav-link" href="#services">Services</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#features">Features</a>
+                                <a class="nav-link" href="#features">Features</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#works">Works</a>
+                                <a class="nav-link" href="#works">Works</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#techStack">Tech Stacks</a>
+                                <a class="nav-link" href="#techStack">Tech Stacks</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#team">Team</a>
+                                <a class="nav-link" href="#team">Team</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#blog">Blog</a>
+                                <a class="nav-link" href="#blog">Blog</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link"
-                                    href="#contact">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
-            <div class="caption-container"
-                id="captionShow">
+            <div class="caption-container" id="captionShow">
                 <h1>Web Development <br />Company</h1>
                 <h5>
                     Empowering startups with our innovative web development
@@ -143,8 +85,7 @@
         </div>
     </div>
 
-    <div class="services-container"
-        id="services">
+    <div class="services-container" id="services">
         <h2 class="caption-title">OUR SERVICES</h2>
         <div class="services-underline"></div>
         <h5 class="caption-desc">
@@ -155,123 +96,87 @@
 
         <div class="services-banner-conatiner">
 
-            <div class="services-banner"
-                id="servicesBanner1">
-                <div class="services-banner-image-container"
-                    id="bannerShow1">
+            <div class="services-banner" id="servicesBanner1">
+                <div class="services-banner-image-container" id="bannerShow1">
                     <span class="services-banner-image-sub-container">
-                        <img src="./assets/Web Application.svg"
-                            alt="icon" />
+                        <img src="./assets/Web Application.svg" alt="icon" />
                     </span>
                 </div>
                 <h3 class="banner-caption-title">Web Application</h3>
-                <h5 id="bannerShow1"
-                    class="banner-caption-desc">We use the latest frontend and backend technologies to build super fast
+                <h5 id="bannerShow1" class="banner-caption-desc">We use the latest frontend and backend technologies to build super fast
                     web apps that your customers will love.</h5>
-                <a id="bannerHamburger1"
-                    onclick="showBanner(this)"
-                    name="bannerShow1">
+                <a id="bannerHamburger1" onclick="showBanner(this)" name="bannerShow1">
                     <i class="fa fa-chevron-down"></i>
                 </a>
             </div>
 
-            <div class="services-banner"
-                id="servicesBanner2">
-                <div class="services-banner-image-container"
-                    id="bannerShow2">
+            <div class="services-banner" id="servicesBanner2">
+                <div class="services-banner-image-container" id="bannerShow2">
                     <span class="services-banner-image-sub-container">
-                        <img src="./assets/Mobile Application.svg"
-                            alt="icon" />
+                        <img src="./assets/Mobile Application.svg" alt="icon" />
+                    </span>
+                </div>
+                <h3 class="banner-caption-title">Mobile Application</h3>
+                <h5 id="bannerShow2" class="banner-caption-desc">We build high performance mobile apps that can run on multiple platforms
+                    using technologies like React Native and Flutter.</h5>
+                <a id="bannerHamburger2" onclick="showBanner(this)" name="bannerShow2">
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+            </div>
+
+            <div class="services-banner" id="servicesBanner3">
+                <div class="services-banner-image-container" id="bannerShow3">
+                    <span class="services-banner-image-sub-container">
+                        <img src="./assets/Mobile Application.svg" alt="icon" />
                     </span>
                 </div>
                 <h3 class="banner-caption-title">Cloud Architecture</h3>
-                <h5 id="bannerShow2"
-                    class="banner-caption-desc">We use serverless technologies like AWS and Google Cloud to build highly
+                <h5 id="bannerShow3" class="banner-caption-desc">We use serverless technologies like AWS and Google Cloud to build highly
                     secure and scalable applications.</h5>
-                <a id="bannerHamburger2"
-                    onclick="showBanner(this)"
-                    name="bannerShow2">
+                <a id="bannerHamburger3" onclick="showBanner(this)" name="bannerShow3">
                     <i class="fa fa-chevron-down"></i>
                 </a>
             </div>
 
-            <div class="services-banner"
-                id="servicesBanner3">
-                <div class="services-banner-image-container"
-                    id="bannerShow3">
+            <div class="services-banner" id="servicesBanner4">
+                <div class="services-banner-image-container" id="bannerShow4">
                     <span class="services-banner-image-sub-container">
-                        <img src="./assets/Idea to Full Digital Product.svg"
-                            alt="icon" />
+                        <img src="./assets/Idea to Full Digital Product.svg" alt="icon" />
                     </span>
                 </div>
                 <h3 class="banner-caption-title">Idea to Full Digital Product</h3>
-                <h5 id="bannerShow3"
-                    class="banner-caption-desc">Transform your ideas to digital products that sell. We help startups and
+                <h5 id="bannerShow4" class="banner-caption-desc">Transform your ideas to digital products that sell. We help startups and
                     enterprises build better products and services thereby enhancing customer satisfaction and revenues.
                 </h5>
-                <a id="bannerHamburger3"
-                    onclick="showBanner(this)"
-                    name="bannerShow3">
+                <a id="bannerHamburger4" onclick="showBanner(this)" name="bannerShow4">
                     <i class="fa fa-chevron-down"></i>
                 </a>
             </div>
 
-            <div class="services-banner"
-                id="servicesBanner4">
-                <div class="services-banner-image-container"
-                    id="bannerShow4">
+            <div class="services-banner" id="servicesBanner5">
+                <div class="services-banner-image-container" id="bannerShow5">
                     <span class="services-banner-image-sub-container">
-                        <img src="./assets/MVP Development.svg"
-                            alt="icon" />
+                        <img src="./assets/MVP Development.svg" alt="icon" />
                     </span>
                 </div>
                 <h3 class="banner-caption-title">MVP Development</h3>
-                <h5 id="bannerShow4"
-                    class="banner-caption-desc">Our team of architects, developers and designers will help you get your
+                <h5 id="bannerShow5" class="banner-caption-desc">Our team of architects, developers and designers will help you get your
                     concepts up and running in no time and help you get the crucial first to market advantage.</h5>
-                <a id="bannerHamburger4"
-                    onclick="showBanner(this)"
-                    name="bannerShow4">
+                <a id="bannerHamburger5" onclick="showBanner(this)" name="bannerShow5">
                     <i class="fa fa-chevron-down"></i>
                 </a>
             </div>
 
-            <div class="services-banner"
-                id="servicesBanner5">
-                <div class="services-banner-image-container"
-                    id="bannerShow5">
+            <div class="services-banner" id="servicesBanner6">
+                <div class="services-banner-image-container" id="bannerShow6">
                     <span class="services-banner-image-sub-container">
-                        <img src="./assets/IoT Architecture.svg"
-                            alt="icon" />
+                        <img src="./assets/IoT Architecture.svg" alt="icon" />
                     </span>
                 </div>
                 <h3 class="banner-caption-title">IoT Architecture</h3>
-                <h5 id="bannerShow5"
-                    class="banner-caption-desc">Discover the untapped potential in your business by adopting the latest
+                <h5 id="bannerShow6" class="banner-caption-desc">Discover the untapped potential in your business by adopting the latest
                     IoT solutions to automate processes and boost your ROI.</h5>
-                <a id="bannerHamburger5"
-                    onclick="showBanner(this)"
-                    name="bannerShow5">
-                    <i class="fa fa-chevron-down"></i>
-                </a>
-            </div>
-
-            <div class="services-banner"
-                id="servicesBanner6">
-                <div class="services-banner-image-container"
-                    id="bannerShow6">
-                    <span class="services-banner-image-sub-container">
-                        <img src="./assets/Web Application.svg"
-                            alt="icon" />
-                    </span>
-                </div>
-                <h3 class="banner-caption-title">Web Application</h3>
-                <h5 id="bannerShow6"
-                    class="banner-caption-desc">We use the latest frontend and backend technologies to build super fast
-                    web apps that your customers will love.</h5>
-                <a id="bannerHamburger6"
-                    onclick="showBanner(this)"
-                    name="bannerShow6">
+                <a id="bannerHamburger6" onclick="showBanner(this)" name="bannerShow6">
                     <i class="fa fa-chevron-down"></i>
                 </a>
             </div>
@@ -281,229 +186,142 @@
         <div class="services-underline"></div>
         <h5 class="caption-desc">Then why wait?<br />We have the perfect team to transform your ideas into digital
             products</h5>
-        <button class="button-pink">TALK TO US</button>
+        <button class="button-pink services-button">TALK TO US</button>
     </div>
 
-    <div class="choose-container"
-        id="features">
-        <h2 class="caption-title">WHY CHOOSE US?</h2>
+    <div class="choose-container" id="features">
+        <h2 class="caption-title" id="chooseTitle">WHY CHOOSE US?</h2>
         <div class="services-underline"></div>
         <h5 class="caption-desc">We focus on our clients' success when building super fast web applications.</h5>
         <div class="choose-banner-container">
             <div class="choose-banner">
-                <img src="./assets/We Listen and We Pitch In.svg"
-                    alt="icon" />
+                <span class="choose-image">
+                    <img src="./assets/We Listen and We Pitch In.svg" alt="icon" />
+                </span>
                 <div>
                     <h3 class="banner-caption-title">We Listen and We Pitch In</h3>
-                    <h5 class="banner-caption-desc1"
-                        id="chooseCaptionDesc">We take the time to know your business to understand what makes it unique
+                    <h5 class="banner-caption-desc1" id="chooseCaptionDesc">We take the time to know your business to understand what makes it unique
                         so that we can come up with solutions best suited to your needs.</h5>
                 </div>
             </div>
             <div class="choose-banner">
-                <img src="./assets/We Listen and We Pitch In.svg"
-                    alt="icon" />
+                <span class="choose-image">
+                    <img src="./assets/Code Quality.svg" alt="icon" />
+                </span>
                 <div>
-                    <h3 class="banner-caption-title">We Listen and We Pitch In</h3>
-                    <h5 class="banner-caption-desc1"
-                        id="chooseCaptionDesc">We take the time to know your business to understand what makes it unique
-                        so that we can come up with solutions best suited to your needs.</h5>
+                    <h3 class="banner-caption-title">Code Quality</h3>
+                    <h5 class="banner-caption-desc1" id="chooseCaptionDesc">We have a good code quality process that ensures better results and
+                        reduced risks for your business without any delays in launch.</h5>
                 </div>
             </div>
             <div class="choose-banner">
-                <img src="./assets/We Listen and We Pitch In.svg"
-                    alt="icon" />
+                <span class="choose-image">
+                    <img src="./assets/Awesome Team.svg" alt="icon" />
+                </span>
                 <div>
-                    <h3 class="banner-caption-title">We Listen and We Pitch In</h3>
-                    <h5 class="banner-caption-desc1"
-                        id="chooseCaptionDesc">We take the time to know your business to understand what makes it unique
-                        so that we can come up with solutions best suited to your needs.</h5>
+                    <h3 class="banner-caption-title">Awesome Team</h3>
+                    <h5 class="banner-caption-desc1" id="chooseCaptionDesc">Right from the get go our explosive team of architects, developers and
+                        team leaders work together to bring you the best tech solutions</h5>
                 </div>
             </div>
             <div class="choose-banner">
-                <img src="./assets/We Listen and We Pitch In.svg"
-                    alt="icon" />
+                <span class="choose-image">
+                    <img src="./assets/Communication.svg" alt="icon" />
+                </span>
                 <div>
-                    <h3 class="banner-caption-title">We Listen and We Pitch In</h3>
-                    <h5 class="banner-caption-desc1"
-                        id="chooseCaptionDesc">We take the time to know your business to understand what makes it unique
-                        so that we can come up with solutions best suited to your needs.</h5>
+                    <h3 class="banner-caption-title">Communication</h3>
+                    <h5 class="banner-caption-desc1" id="chooseCaptionDesc">Communication is a key part of our success. You'll be updated daily on
+                        project progress. We are always open to suggestions and clearing any queries</h5>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="portfolio-container"
-        id="works">
+    <div class="portfolio-container" id="works">
         <h2 class="caption-title">OUR PORTFOLIO</h2>
         <div class="services-underline"></div>
         <h5 class="caption-desc">We had the privilege of helping some of the best startups and enterprises across
             multiple industries achieve their business goals.</h5>
-        <div class="portfolio-carousel-container">
 
-            <div class="container">
-                <div class="carousel slide multi-item-carousel"
-                    id="theCarousel">
 
-                    <ol class="carousel-indicators">
-                        <li data-target="#blogCarousel"
-                            data-slide-to="0"
-                            class="active"></li>
-                        <li data-target="#blogCarousel"
-                            data-slide-to="1"></li>
-                        <li data-target="#blogCarousel"
-                            data-slide-to="0"></li>
-                        <li data-target="#blogCarousel"
-                            data-slide-to="1"></li>
-                    </ol>
+        <div class="container mt-5 mb-5">
+            <div class="portfolio-carousel owl-carousel owl-theme  ">
+                <div class="item">
+                    <div class="card carousel-banner">
+                        <h3>DAILYAI</h3>
+                        <div class="content_img">
+                            <img src="./assets/Image1.png" />
+                            <div>
+                                Daily AI is a CRM made specifically for lenders. It outperforms existing CRMs by utilizing AI and computer learning to help lenders automate their follow ups, close loans, update client details, etc.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card carousel-banner ">
+                        <h3>NATIONAL TAXI SERVICES</h3>
+                        <div class="content_img">
+                            <img src="./assets/Image2.png" />
+                            <div>
+                                RideYellow is an innovative ride app from National Taxi Service (NTS). They have partnered with taxi fleets across the US, providing
+                                safe and secure rides to people by connecting them with reliable and experienced drivers in their locality at the tap of a button.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card carousel-banner ">
+                        <h3>PROPERTYOK</h3>
+                        <div class="content_img">
+                            <img src="./assets/Image3.png" />
+                            <div>
+                                PropertyOK is a real estate company launched in 2014 with a predominantly offline business model. They came to us in 2017 to help
+                                them transform their online presence. We helped them launch their online real-estate platform. This helped them shift their business to an online model. Now they are one of South India's top real estate platforms.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card carousel-banner ">
+                        <h3>WAITWHILE</h3>
+                        <div class="content_img">
+                            <img src="./assets/Image4.png" />
+                            <div>
+                                Waitwhile is the world's most intelligent waitlist and scheduling app used by thousands of businesses including Ikea stores,
+                                Facebook and LinkedIn. It estimates wait times using predictive analysis which is 30% more effective than
+                                humans. They approached us to help the boost their apps performance by helping them migrate from AngularJS to Angular.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card carousel-banner ">
+                        <h3>LAWLI</h3>
+                        <div class="content_img">
+                            <img src="./assets/Image5.png" />
+                            <div>
+                                Lawli is an intelligent legal assistant providing businesses with low cost document processing services. Powered by AI, Lawli provides law firms and businesses of varying size with the tools to gain control over their legal services and create a positive business environment for everyone.
 
-                    <div class="carousel-inner row w-100 mx-auto">
-                        <div class="carousel-item active col-md-4">
-                            <div class="carousel-banner ">
-                                <h3>DAILYAI</h3>
-                                <div class="content_img">
-                                    <img src="./assets/technology-code-coding-computer Cropped.jpg" />
-                                    <div>
-                                        PropertyOK is a real estate company launched in 2014 with a
-                                        predominantly offline business model. They came to us in 2017 to help
-                                        them transform their online presence. We helped them launch their online
-                                        real-estate platform. This helped them shift their business to an online
-                                        model. Now they are one of South India's top real estate platforms.
-                                    </div>
-                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item col-md-4">
-                            <div class="carousel-banner ">
-                                <h3>NATIONAL TAXI SERVICES</h3>
-                                <div class="content_img">
-                                    <img src="./assets/WWJUGFOLUNOXV6UW6TOJWMSZWE Cropped.jpg" />
-                                    <div>
-                                        PropertyOK is a real estate company launched in 2014 with a
-                                        predominantly offline business model. They came to us in 2017 to help
-                                        them transform their online presence. We helped them launch their online
-                                        real-estate platform. This helped them shift their business to an online
-                                        model. Now they are one of South India's top real estate platforms.
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card carousel-banner ">
+                        <h3>WRENCH.ai</h3>
+                        <div class="content_img">
+                            <img src="./assets/Image6.png" />
+                            <div>
+                                Wrench.AI helps businesses make better decisions using Big Data-based software and tools. The platform integrates with existing CRMs to boost sales by delivering personalized experiences.
                             </div>
                         </div>
-                        <div class="carousel-item col-md-4">
-                            <div class="carousel-banner ">
-                                <h3>PROPERTYOK</h3>
-                                <div class="content_img">
-                                    <img
-                                        src="./assets/apple-mouse-artificial-flowers-blurred-background-close-up Cropped.jpg" />
-                                    <div>
-                                        PropertyOK is a real estate company launched in 2014 with a
-                                        predominantly offline business model. They came to us in 2017 to help
-                                        them transform their online presence. We helped them launch their online
-                                        real-estate platform. This helped them shift their business to an online
-                                        model. Now they are one of South India's top real estate platforms.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-md-4">
-                            <div class="carousel-banner ">
-                                <h3>DAILYAI</h3>
-                                <div class="content_img">
-                                    <img src="./assets/technology-code-coding-computer Cropped.jpg" />
-                                    <div>
-                                        PropertyOK is a real estate company launched in 2014 with a
-                                        predominantly offline business model. They came to us in 2017 to help
-                                        them transform their online presence. We helped them launch their online
-                                        real-estate platform. This helped them shift their business to an online
-                                        model. Now they are one of South India's top real estate platforms.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-md-4">
-                            <div class="carousel-banner ">
-                                <h3>NATIONAL TAXI SERVICES</h3>
-                                <div class="content_img">
-                                    <img src="./assets/WWJUGFOLUNOXV6UW6TOJWMSZWE Cropped.jpg" />
-                                    <div>
-                                        PropertyOK is a real estate company launched in 2014 with a
-                                        predominantly offline business model. They came to us in 2017 to help
-                                        them transform their online presence. We helped them launch their online
-                                        real-estate platform. This helped them shift their business to an online
-                                        model. Now they are one of South India's top real estate platforms.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-md-4">
-                            <div class="carousel-banner ">
-                                <h3>PROPERTYOK</h3>
-                                <div class="content_img">
-                                    <img
-                                        src="./assets/apple-mouse-artificial-flowers-blurred-background-close-up Cropped.jpg" />
-                                    <div>
-                                        PropertyOK is a real estate company launched in 2014 with a
-                                        predominantly offline business model. They came to us in 2017 to help
-                                        them transform their online presence. We helped them launch their online
-                                        real-estate platform. This helped them shift their business to an online
-                                        model. Now they are one of South India's top real estate platforms.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-md-4">
-                            <div class="carousel-banner ">
-                                <h3>DAILYAI</h3>
-                                <div class="content_img">
-                                    <img src="./assets/technology-code-coding-computer Cropped.jpg" />
-                                    <div>
-                                        PropertyOK is a real estate company launched in 2014 with a
-                                        predominantly offline business model. They came to us in 2017 to help
-                                        them transform their online presence. We helped them launch their online
-                                        real-estate platform. This helped them shift their business to an online
-                                        model. Now they are one of South India's top real estate platforms.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item col-md-4">
-                            <div class="carousel-banner ">
-                                <h3>NATIONAL TAXI SERVICES</h3>
-                                <div class="content_img">
-                                    <img src="./assets/WWJUGFOLUNOXV6UW6TOJWMSZWE Cropped.jpg" />
-                                    <div>
-                                        PropertyOK is a real estate company launched in 2014 with a
-                                        predominantly offline business model. They came to us in 2017 to help
-                                        them transform their online presence. We helped them launch their online
-                                        real-estate platform. This helped them shift their business to an online
-                                        model. Now they are one of South India's top real estate platforms.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev"
-                            href="#theCarousel"
-                            role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon"
-                                aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next"
-                            href="#theCarousel"
-                            role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon"
-                                aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="stack-container"
-        id="techStack">
+    <div class="stack-container" id="techStack">
         <h2 class="caption-title">OUR TECH STACK</h2>
         <div class="services-underline"></div>
         <h5 class="caption-desc">Our talented team of developers are proficient across a multitude of powerful
@@ -517,25 +335,21 @@
                 <div class="stack-banner-icon-container">
                     <div id="split">
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/node.png"
-                                alt="icon" />
+                            <img src="./assets/logos/node.png" alt="icon" />
                             <span>NODE</span>
                         </div>
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/VUE.png"
-                                alt="icon" />
+                            <img src="./assets/logos/VUE.png" alt="icon" />
                             <span>VUE</span>
                         </div>
                     </div>
                     <div id="split">
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/react.png"
-                                alt="icon" />
+                            <img src="./assets/logos/react.png" alt="icon" />
                             <span>REACT</span>
                         </div>
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/ANGULAR.png"
-                                alt="icon" />
+                            <img src="./assets/logos/ANGULAR.png" alt="icon" />
                             <span>ANGULAR</span>
                         </div>
                     </div>
@@ -547,25 +361,21 @@
                 <div class="stack-banner-icon-container">
                     <div id="split">
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/react.png"
-                                alt="icon" />
+                            <img src="./assets/logos/react.png" alt="icon" />
                             <span>REACT</span>
                         </div>
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/FLUTTER.png"
-                                alt="icon" />
+                            <img src="./assets/logos/FLUTTER.png" alt="icon" />
                             <span>FLUTTER</span>
                         </div>
                     </div>
                     <div id="split">
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/Nativescript.png"
-                                alt="icon" />
+                            <img src="./assets/logos/Nativescript.png" alt="icon" />
                             <span>NATIVESCRIPT</span>
                         </div>
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/IONIC.png"
-                                alt="icon" />
+                            <img src="./assets/logos/IONIC.png" alt="icon" />
                             <span>IONIC</span>
                         </div>
                     </div>
@@ -577,25 +387,21 @@
                 <div class="stack-banner-icon-container">
                     <div id="split">
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/AWS.png"
-                                alt="icon" />
+                            <img src="./assets/logos/AWS.png" alt="icon" />
                             <span>AWS</span>
                         </div>
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/AZURE.png"
-                                alt="icon" />
+                            <img src="./assets/logos/AZURE.png" alt="icon" />
                             <span>AZURE</span>
                         </div>
                     </div>
                     <div id="split">
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/GCP.png"
-                                alt="icon" />
+                            <img src="./assets/logos/GCP.png" alt="icon" />
                             <span>GCP</span>
                         </div>
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/FIREBASE.png"
-                                alt="icon" />
+                            <img src="./assets/logos/FIREBASE.png" alt="icon" />
                             <span>FIREBASE</span>
                         </div>
                     </div>
@@ -607,25 +413,21 @@
                 <div class="stack-banner-icon-container">
                     <div id="split">
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/MQTT.png"
-                                alt="icon" />
+                            <img src="./assets/logos/MQTT.png" alt="icon" />
                             <span>MQTT</span>
                         </div>
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/BIGML.png"
-                                alt="icon" />
+                            <img src="./assets/logos/BIGML.png" alt="icon" />
                             <span>BIGML</span>
                         </div>
                     </div>
                     <div id="split">
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/tensorflow.png"
-                                alt="icon" />
+                            <img src="./assets/logos/tensorflow.png" alt="icon" />
                             <span>TENSORFLOW</span>
                         </div>
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/OPENCV.png"
-                                alt="icon" />
+                            <img src="./assets/logos/OPENCV.png" alt="icon" />
                             <span>OPENCV</span>
                         </div>
                     </div>
@@ -637,25 +439,21 @@
                 <div class="stack-banner-icon-container">
                     <div id="split">
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/Sketch.png"
-                                alt="icon" />
+                            <img src="./assets/logos/Sketch.png" alt="icon" />
                             <span>SKETCH</span>
                         </div>
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/FIGMA.png"
-                                alt="icon" />
+                            <img src="./assets/logos/FIGMA.png" alt="icon" />
                             <span>FIGMA</span>
                         </div>
                     </div>
                     <div id="split">
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/PHOTOSHOP.png"
-                                alt="icon" />
+                            <img src="./assets/logos/PHOTOSHOP.png" alt="icon" />
                             <span>PHOTOSHOP</span>
                         </div>
                         <div class="stack-banner-icon">
-                            <img src="./assets/logos/MARVEL.png"
-                                alt="icon" />
+                            <img src="./assets/logos/MARVEL.png" alt="icon" />
                             <span>MARVEL</span>
                         </div>
                     </div>
@@ -666,40 +464,35 @@
 
     <div class="about-container">
         <div class="about-banner">
-            <img src="./assets/startup.png"
-                alt="icon" />
+            <img src="./assets/startup.png" alt="icon" />
             <h4>ISO 9001:2015</h4>
             <h5>certified conpany</h5>
         </div>
 
         <div class="about-banner">
-            <img src="./assets/coffee-cup.png"
-                alt="icon" />
+            <img src="./assets/coffee-cup.png" alt="icon" />
             <h4>$10M+</h4>
             <h5>Helped Raised</h5>
         </div>
 
         <div class="about-banner">
-            <img src="./assets/user.png"
-                alt="icon" />
+            <img src="./assets/user.png" alt="icon" />
             <h4>7+</h4>
             <h5>Countries</h5>
         </div>
 
         <div class="about-banner">
-            <img src="./assets/heart.png"
-                alt="icon" />
+            <img src="./assets/heart.png" alt="icon" />
             <h4>50+</h4>
             <h5>People Love</h5>
         </div>
 
     </div>
 
-    <div class="owner-card-container"
-        id="team">
+    <div class="owner-card-container" id="team">
         <div class="owner-card">
             <div class="owner">
-                <div class="owner-image"></div>
+                <div class="owner-image" id="owner1"></div>
                 <div class="owner-details">
                     <h4>Christoffer Klemming</h4>
                     <h5>Growth Product Manager at Google
@@ -714,7 +507,7 @@
 
         <div class="owner-card">
             <div class="owner">
-                <div class="owner-image"></div>
+                <div class="owner-image" id="owner2"></div>
                 <div class="owner-details">
                     <h4>Spencer Dusebout</h4>
                     <h5>Managing Partner, Daily AI</h5>
@@ -734,108 +527,121 @@
         <h5 class="caption-desc">
             We've got a seasoned team of tech wizards who share a common vision for the future
         </h5>
-        <div class="core-team-card-container">
-            <div class="core-team-card">
-                <img src="./assets/faiz.png"
-                    id="profilePic">
-                <h4>Faiz</h4>
-                <h5>Chief Executive Officer</h5>
-                <a href="www.linkedin.com">
-                    <img id="linkedinIcon"
-                        src="./assets/linkedin.png"
-                        alt="linkedin" />
-                </a>
 
-            </div>
+        <div class="core-team-carousel-container container mt-5 mb-5">
+            <div class="core-team-carousel owl-carousel owl-theme">
+                <div class="core-team-item item  ml-2 mr-2">
+                    <div class="core-team-card card">
+                        <img src="./assets/image1.png" id="profilePic">
+                        <h4>Faiz</h4>
+                        <h5>Chief Executive Officer</h5>
+                        <a href="www.linkedin.com">
+                            <img id="linkedinIcon" src="./assets/linkedin.png" alt="linkedin" />
+                        </a>
+                    </div>
+                </div>
 
-            <div class="core-team-card">
-                <img src="./assets/abhilash.png"
-                    id="profilePic">
-                <h4>Abhilash</h4>
-                <h5>Chief business officer</h5>
-                <a href="www.linkedin.com">
-                    <img id="linkedinIcon"
-                        src="./assets/linkedin.png"
-                        alt="linkedin" />
-                </a>
-            </div>
+                <div class="core-team-item item  ml-2 mr-2">
+                    <div class="core-team-card card">
+                        <img src="./assets/image2.png" id="profilePic">
+                        <h4>Abhilash</h4>
+                        <h5>Chief business officer</h5>
+                        <a href="www.linkedin.com">
+                            <img id="linkedinIcon" src="./assets/linkedin.png" alt="linkedin" />
+                        </a>
+                    </div>
+                </div>
 
-            <div class="core-team-card"
-                id="cardHide">
-                <img src="./assets/rakesh.png"
-                    id="profilePic">
-                <h4>Rakesh Kiron</h4>
-                <h5>Chief operating officer</h5>
-                <a href="www.linkedin.com">
-                    <img id="linkedinIcon"
-                        src="./assets/linkedin.png"
-                        alt="linkedin" />
-                </a>
-            </div>
+                <div class="core-team-item item  ml-2 mr-2">
+                    <div class="core-team-card card">
+                        <img src="./assets/image3.png" id="profilePic">
+                        <h4>Rakesh Kiron</h4>
+                        <h5>Chief operating officer</h5>
+                        <a href="www.linkedin.com">
+                            <img id="linkedinIcon" src="./assets/linkedin.png" alt="linkedin" />
+                        </a>
+                    </div>
+                </div>
 
-            <div class="core-team-card"
-                id="cardHide">
-                <img src="./assets/suralal.png"
-                    id="profilePic">
-                <h4>Suralal Suresh</h4>
-                <h5>Tech Lead</h5>
-                <a href="www.linkedin.com">
-                    <img id="linkedinIcon"
-                        src="./assets/linkedin.png"
-                        alt="linkedin" />
-                </a>
+                <div class="core-team-item  item  ml-2 mr-2">
+                    <div class="core-team-card card">
+                        <img src="./assets/image4.png" id="profilePic">
+                        <h4>Suralal Suresh</h4>
+                        <h5>Tech Lead</h5>
+                        <a href="www.linkedin.com">
+                            <img id="linkedinIcon" src="./assets/linkedin.png" alt="linkedin" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="core-team-item item  ml-2 mr-2">
+                    <div class="core-team-card card">
+                        <img src="./assets/image5.png" id="profilePic">
+                        <h4>Safaldas</h4>
+                        <h5>Full Stack Developer</h5>
+                        <a href="www.linkedin.com">
+                            <img id="linkedinIcon" src="./assets/linkedin.png" alt="linkedin" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="core-team-item item  ml-2 mr-2">
+                    <div class="core-team-card card">
+                        <img src="./assets/image6.png" id="profilePic">
+                        <h4>Jayakrishnan</h4>
+                        <h5>Full Stack Developer</h5>
+                        <a href="www.linkedin.com">
+                            <img id="linkedinIcon" src="./assets/linkedin.png" alt="linkedin" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="core-team-item item  ml-2 mr-2">
+                    <div class="core-team-card card">
+                        <img src="./assets/image7.png" id="profilePic">
+                        <h4>Jishnu N B</h4>
+                        <h5>Full Stack Developer</h5>
+                        <a href="www.linkedin.com">
+                            <img id="linkedinIcon" src="./assets/linkedin.png" alt="linkedin" />
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
-    <div class="blog-container"
-        id="blog">
+    <div class="blog-container" id="blog">
         <h2 class="caption-title">BLOGS</h2>
         <div class="services-underline"></div>
         <h5 class="caption-desc">
             We are constantly learning new stuff and love to share it with you guys. Take a look.
         </h5>
         <div class="blog-banner-container">
-            <div class="blog-banner"
-                id="blogBanner1">
-                <img id="blogProfilePic"
-                    src="./assets/b1.jpg"
-                    alt="blog" />
+            <div class="blog-banner" id="blogBanner1">
+                <img id="blogProfilePic" src="./assets/b1.jpg" alt="blog" />
                 <h5>August 23, 2019</h5>
                 <h4 id="redOnHover">How to expose localhost to any device using Ngrok</h4>
-                <img id="likeImage"
-                    src="./assets/b4.png"
-                    alt="likes" />
+                <img id="likeImage" src="./assets/b4.png" alt="likes" />
             </div>
-            <div class="blog-banner"
-                id="blogBanner2">
-                <img id="blogProfilePic"
-                    src="./assets/b2.jpg"
-                    alt="blog" />
+            <div class="blog-banner" id="blogBanner2">
+                <img id="blogProfilePic" src="./assets/b2.jpg" alt="blog" />
                 <h5>August 23, 2019</h5>
                 <h4 id="redOnHover">How to expose localhost to any device using Ngrok</h4>
-                <img id="likeImage"
-                    src="./assets/b4.png"
-                    alt="likes" />
+                <img id="likeImage" src="./assets/b4.png" alt="likes" />
             </div>
 
-            <div class="blog-banner"
-                id="blogBanner3">
-                <img id="blogProfilePic"
-                    src="./assets/b3.jpg"
-                    alt="blog" />
+            <div class="blog-banner" id="blogBanner3">
+                <img id="blogProfilePic" src="./assets/b3.jpg" alt="blog" />
                 <h5>August 23, 2019</h5>
                 <h4 id="redOnHover">How to expose localhost to any device using Ngrok</h4>
-                <img id="likeImage"
-                    src="./assets/b4.png"
-                    alt="likes" />
+                <img id="likeImage" src="./assets/b4.png" alt="likes" />
             </div>
         </div>
 
     </div>
 
-    <div class="form-container"
-        id="contact">
+    <div class="form-container" id="contact">
         <h2 class="caption-title">LET'S CONNECT</h2>
         <div class="services-underline"></div>
         <h5 class="caption-desc">
@@ -846,47 +652,29 @@
                 <form>
                     <div class="form-row-container">
                         <div class="form-group">
-                            <input type="name"
-                                class="form-control"
-                                id="exampleInputEmail1"
-                                aria-describedby="emailHelp"
-                                placeholder="Your Name">
+                            <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Name">
                         </div>
                         <div class="form-group">
-                            <input type="email"
-                                class="form-control"
-                                id="exampleInputPassword1"
-                                placeholder="Your Email">
+                            <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Your Email">
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="text"
-                            class="form-control email-input"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                            placeholder="Subject">
+                        <input type="text" class="form-control email-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Subject">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control message-input"
-                            id="exampleFormControlTextarea1"
-                            placeholder="Your Message"
-                            rows="3"></textarea>
+                        <textarea class="form-control message-input" id="exampleFormControlTextarea1" placeholder="Your Message" rows="3"></textarea>
                     </div>
-                    <button id="formButton"
-                        type="submit"
-                        class="btn btn-primary button-pink">Submit</button>
+                    <button id="formButton" type="submit" class="btn btn-primary button-pink">Submit</button>
                 </form>
             </div>
             <div class="form-right-container">
                 <div>
-                    <img src="./assets/email.svg"
-                        alt="mail" />
+                    <img src="./assets/email.svg" alt="mail" />
                     <h4>E-mail</h4>
                     <a href="bd@neoito.com">bd@neoito.com</a>
                 </div>
                 <div>
-                    <img src="./assets/pink-phone.svg"
-                        alt="mail" />
+                    <img src="./assets/pink-phone.svg" alt="mail" />
                     <h4>Phone</h4>
                     <a href="+91 7439540234">+91 7439540234</a>
                 </div>
@@ -897,9 +685,9 @@
     <footer class="footer-container">
         <div class="footer-left-container">
             <h2> Web Development<br />Company </h2>
-            <h5 class="caption-desc"
-                id="footerDesc">
-                If you think you have the passion, attitude and capability to join us the next big software company so that we can get the conversion.
+            <h5 class="caption-desc" id="footerDesc">
+                If you think you have the passion, attitude and capability to join us the next big software company so
+                that we can get the conversion.
             </h5>
 
             <div class="footer-icon-container">
@@ -939,46 +727,84 @@
             TOS &emsp; Privacy Policy &emsp; Cookie Policy
         </span>
     </div>
-</body>
 
-<script>
-    $('.multi-item-carousel').on('slide.bs.carousel', function (e) {
-        let $e = $(e.relatedTarget),
-            itemsPerSlide = 3,
-            totalItems = $('.carousel-item', this).length,
-            $itemsContainer = $('.carousel-inner', this),
-            it = itemsPerSlide - (totalItems - $e.index());
-        if (it > 0) {
-            for (var i = 0; i < it; i++) {
-                $('.carousel-item', this).eq(e.direction == "left" ? i : 0).
-                    // append slides to the end/beginning
-                    appendTo($itemsContainer);
-            }
-        }
-    });
-</script>
 
-<script>
-    $('#carouselExample').on('slide.bs.carousel', function (e) {
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-        var $e = $(e.relatedTarget);
-        var idx = $e.index();
-        var itemsPerSlide = 3;
-        var totalItems = $('.carousel-item').length;
-
-        if (idx >= totalItems - (itemsPerSlide - 1)) {
-            var it = itemsPerSlide - (totalItems - idx);
-            for (var i = 0; i < it; i++) {
-                // append slides to end
-                if (e.direction == "left") {
-                    $('.carousel-item').eq(i).appendTo('.carousel-inner');
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#hamburgerButton").click(function () {
+                $("#captionShow").toggle();
+                if ($("#hamburgerIcon").attr("src") == './assets/menu.svg') {
+                    $('#hamburgerIcon').attr('src', './assets/menu2.svg');
                 }
                 else {
-                    $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                    $('#hamburgerIcon').attr('src', './assets/menu.svg');
+                }
+            });
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <script>
+        $('.portfolio-carousel').owlCarousel({
+            autoplay: true,
+            autoplayHoverPause: true,
+            items: 3,
+            dots: true,
+            loop: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
                 }
             }
-        }
-    });
-</script>
+        })
+    </script>
+
+    <script>
+        $('.core-team-carousel').owlCarousel({
+            autoplay: true,
+            autoplayHoverPause: true,
+            items: 4,
+            dots: true,
+            loop: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
+
+</body>
 
 </html>
