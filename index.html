@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
@@ -745,6 +745,17 @@
                 }
             });
         });
+    </script>
+
+    <script>
+        showBanner = (event) => {
+            let idName = this[event.name];
+            let buttonId = event.id;
+            console.log($(event).children("i"))
+            $(idName).toggle();
+            console.log(event)
+            $(event).children("svg").toggleClass('fa-chevron-down fa-chevron-up');
+        }
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
