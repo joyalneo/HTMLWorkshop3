@@ -194,11 +194,12 @@
     width: 90%;
     color: #263238;
     font-size: 36px;
-    line-height: 76px;
+    line-height: 50px;
     text-align: center;
     font-weight: bold;
     margin: 0;
     margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .caption-desc {
@@ -249,7 +250,6 @@
     font-weight: bold;
     color: #263238;
     font-size: 18px;
-    margin-bottom: 15px;
 }
 
 .banner-caption-desc {
@@ -258,7 +258,9 @@
     width: 100%;
     text-align: center;
     line-height: 22px;
+    margin-top: 15px;
 }
+
 
 .banner-caption-desc1 {
     font-size: 14px;
@@ -390,7 +392,7 @@
         cursor: pointer;
     }
     .caption-title {
-        font-size: 17px;
+        font-size: 30px;
     }
     .banner-caption-desc {
         display: none;
@@ -400,6 +402,9 @@
     }
     .services-banner a {
         display: block;
+    }
+    .banner-caption-title {
+        font-size: 16px;
     }
 }
 
@@ -466,6 +471,10 @@
         justify-content: center;
         align-items: center;
     }
+
+    .caption-title {
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -478,13 +487,16 @@
         justify-content: space-between;
         align-items: flex-start;
         margin-top: 30px;
-        /* gap: 10px; */
         width: 100%;
         max-width: 0;
     }
     .choose-banner div {
         width: 90%;
     }
+    .choose-banner img {
+        height: 25px;
+    }
+    
 }
 
 .portfolio-container {
@@ -664,6 +676,10 @@
     .stack-banner h4 {
         text-align: left;
     }
+    .content_img div {
+        font-size: 10px;
+        line-height: 15px;
+    }
 }
 
 .about-container {
@@ -738,6 +754,31 @@
 
     .about-banner h5 {
         font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .about-container {
+        padding: 0 10px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        gap: 0;
+        justify-content: space-between;
+    }
+    .about-banner {
+        min-width: 48%;
+        margin-bottom: 10px;
+        min-height: 0;
+        border-radius: 10px;
+    }
+    .about-banner h4 {
+        font-size: 14px;
+    }
+    .about-banner h5 {
+        font-size: 11px;
+    }
+    .about-banner img {
+        width: 30px;
     }
 }
 
@@ -826,6 +867,7 @@
     .owner-card-container {
         display: none;
     }
+
 }
 
 .core-team-container {
@@ -875,7 +917,7 @@
     line-height: 20px;
     text-align: center;
     margin: 0;
-    width: 90%;
+    width: 100%;
 }
 
 #linkedinIcon {
@@ -895,6 +937,12 @@
 @media only screen and (max-width: 600px) {
     .core-team-carousel-container {
         padding: 0 10px;
+    }
+    .core-team-card h5 {
+        font-size: 10px;
+    }
+    .core-team-card h4 {
+        font-size: 15px;
     }
 }
 
@@ -1056,6 +1104,10 @@
 }
 
 @media only screen and (max-width: 850px) {
+    .form-container{
+        padding: 0 30px;
+        padding-bottom: 50px;
+    }
     .form-sub-container {
         flex-direction: column-reverse;
     }
